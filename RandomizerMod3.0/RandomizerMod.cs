@@ -106,6 +106,8 @@ namespace RandomizerMod
 
             _logicParseThread.Join(); // new update -- logic manager is needed to supply start locations to menu
             MenuChanger.EditUI();
+
+            Translator.Initialize(); // Generate translation
         }
 
         public override List<(string, string)> GetPreloadNames()
